@@ -1,30 +1,24 @@
-import React from 'react'
-import RoomsFilter from './RoomsFilter'
-import RoomsList from './RoomsList'
-import { withRoomConsumer } from '../context'
-import Loading from '../components/Loading'
+import React from "react";
+import RoomsFilter from "./RoomsFilter";
+import RoomsList from "./RoomsList";
+import { withRoomConsumer } from "../context";
+import Loading from "../components/Loading";
 
 function RoomContainer({ context }) {
-  const { loading, sortedRooms, rooms } = context
+  const { loading, sortedRooms, rooms } = context;
   if (loading) {
-    return <Loading />
+    return <Loading />;
   }
 
   return (
     <div>
-      Hello form romms container
-      <RoomsFilter rooms={rooms}></RoomsFilter>
-      <RoomsList rooms={sortedRooms}></RoomsList>
+      <RoomsFilter rooms={rooms} />
+      <RoomsList rooms={sortedRooms} />
     </div>
   );
 }
 
-export default withRoomConsumer(RoomContainer)
-
-
-
-
-
+export default withRoomConsumer(RoomContainer);
 
 // If you wish to consume the context without using Higher Order Components:
 
