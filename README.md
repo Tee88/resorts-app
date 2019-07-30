@@ -11,4 +11,4 @@ A resort/hotel web app project built using React.js to display content stored on
 
 # Demo
 
-Click [HERE](https://resorts-app.netlify.com) to check the demo
+Click [HERE](https://resort-react.netlify.com/) to check the demo
